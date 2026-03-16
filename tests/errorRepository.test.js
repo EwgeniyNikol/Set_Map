@@ -15,7 +15,7 @@ describe('ErrorRepository class', () => {
 
     test('should have correct error codes', () => {
       const codes = [400, 401, 403, 404, 500, 502, 503];
-      codes.forEach(code => {
+      codes.forEach((code) => {
         expect(errorRepo.errors.has(code)).toBe(true);
       });
     });
